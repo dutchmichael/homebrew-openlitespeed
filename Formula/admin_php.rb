@@ -1,7 +1,7 @@
 class AdminPhp < Formula
   homepage "https://secure.php.net"
-  url "https://secure.php.net/get/php-7.2.10.tar.xz/from/this/mirror"
-  sha256 "01c2154a3a8e3c0818acbdbc1a956832c828a0380ce6d1d14fea495ea21804f0"
+  url "https://secure.php.net/get/php-7.4.4.tar.xz/from/this/mirror"
+  sha256 "1873c4cefdd3df9a78dcffb2198bba5c2f0464f55c9c960720c84df483fca74c"
 
   depends_on "expat"
   depends_on "libxml2"

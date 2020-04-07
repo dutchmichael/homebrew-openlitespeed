@@ -3,17 +3,18 @@ require "formula"
 class Openlitespeed < Formula
     desc "OpenLiteSpeed is a high-performance, lightweight, open source HTTP server developed and copyrighted by LiteSpeed Technologies. Users are free to download, use, distribute, and modify OpenLiteSpeed and its source code in accordance with the precepts of the GPLv3 license."
     homepage "https://openlitespeed.org/"
-    url "https://openlitespeed.org/packages/openlitespeed-1.4.41.src.tgz"
+    url "https://openlitespeed.org/packages/openlitespeed-1.6.11.src.tgz"
     sha256 "ce5f82f4b048f7075bdc55723959924c00cda958a928c592fb129ba84b32f741"
     head "https://github.com/litespeedtech/openlitespeed.git"
-    version "1.4.41"
+    version "1.6.11"
 
     option "with-luajit", "use liblua (located in directory DIR, if supplied) for compiling mod_lua module.  [default=no]"
     option "with-debug", "Enable debugging symbols (Debug is disabled by default)"
 
     option "without-http2", "Disable SPDY and http2 over HTTPS"
 
-    depends_on "puleeno/openlitespeed/admin_php"
+    # depends_on "puleeno/openlitespeed/admin_php"
+    depends_on "dutchmichael/openlitespeed/admin_php"
     depends_on "pcre"
     depends_on "expat"
     depends_on "openssl"
